@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clement Wanjihia Portfolio
+
+A modern portfolio website inspired by Brittany Chiang's design philosophy, built with Next.js, TypeScript, and Tailwind CSS.
+
+## About
+
+This portfolio showcases my work as a Software Engineer and Cybersecurity Student. It highlights real-world projects, professional experience, technical skills, and ongoing learning in software engineering and cybersecurity.
+
+## Live Website
+
+Visit the live portfolio:
+
+[Portfolio URL]
+
+## Featured Projects
+
+### Shoe-In Kenya
+
+A production ecommerce platform for a growing men's footwear brand.
+
+**Highlights**
+
+* Ecommerce architecture
+* SEO optimization
+* Mobile-first design
+* Product catalog management
+* Performance optimization
+
+**Tech Stack**
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Vercel
+
+---
+
+### Mr Glitch Computers
+
+Modern ecommerce platform for laptops, monitors, and electronics.
+
+**Highlights**
+
+* Responsive storefront
+* Product management
+* Admin workflows
+* Supabase integration
+
+**Tech Stack**
+
+* Next.js
+* TypeScript
+* Supabase
+* Tailwind CSS
+
+---
+
+### Joseph Njogu Portfolio
+
+Professional personal brand website for a business architect, team-building expert, and pastor.
+
+**Highlights**
+
+* Personal branding
+* Content-focused architecture
+* Responsive design
+* Modern UI/UX
+
+**Tech Stack**
+
+* React
+* Supabase
+* Tailwind CSS
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend & Services
+
+* Supabase
+* Vercel
+
+### Other Tools
+
+* Git
+* GitHub
+* Figma
+
+## Features
+
+* Responsive design
+* Modern UI inspired by Brittany Chiang
+* Active section navigation
+* Interactive spotlight effect
+* Project showcase
+* Professional experience timeline
+* Social media integration
+* Resume download
+* SEO-friendly metadata
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/Clementclem/Clement-portfolio.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Clement Wanjihia**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* GitHub: https://github.com/Clementclem
+* X: https://x.com/clem_clement_
+* Email: [wanjihiawanjia@gmail.com](mailto:wanjihiawanjia@gmail.com)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT License.
