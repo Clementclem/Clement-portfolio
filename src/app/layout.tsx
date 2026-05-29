@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://clem-portfolio.vercel.app"),
+  metadataBase: new URL("https://clement-portfolio-five.vercel.app/"),
   title: {
     default: "Clement Wanjihia",
     template: "%s | Clement Wanjihia",
