@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import Sidebar from "@/components/Sidebar";
 import Skills from "@/components/Skills";
 import Spotlight from "@/components/Spotlight";
@@ -19,6 +20,8 @@ export default function HomePage() {
             <About />
 
             <Skills />
+
+            <Services />
 
             <Experience />
 

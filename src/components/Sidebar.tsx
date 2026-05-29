@@ -6,6 +6,8 @@ import SocialLinks from "./SocialLinks";
 
 const navItems = [
   { label: "About", href: "#about", id: "about" },
+  { label: "Skills", href: "#skills", id: "skills" },
+  { label: "Services", href: "#services", id: "services" },
   { label: "Experience", href: "#experience", id: "experience" },
   { label: "Projects", href: "#projects", id: "projects" },
   { label: "Contact", href: "#contact", id: "contact" },
