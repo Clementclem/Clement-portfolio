@@ -10,31 +10,33 @@ export default function About() {
       <div className="grid gap-10 lg:grid-cols-[1fr_180px] lg:items-start">
         <div className="space-y-6 text-[16px] leading-8 text-[#8892b0]">
           <p>
-            I&apos;m a software engineer focused on building accessible,
-            scalable, and user-friendly digital products using modern
-            technologies.
-          </p>
-
-          <p>
-            My primary toolkit includes{" "}
+            I&apos;m a software engineer focused on building modern,
+            responsive, and business-focused digital products using{" "}
             <span className="text-[#ccd6f6]">
               Next.js, React, TypeScript, Tailwind CSS, Supabase, and Vercel
             </span>
-            . I enjoy transforming ideas into polished, production-ready
-            applications.
+            .
           </p>
 
           <p>
-            Beyond software engineering, I&apos;m actively studying{" "}
-            <span className="text-[#ccd6f6]">cybersecurity</span>, with
-            interests in cloud security, secure systems, networking, and
+            My work sits at the intersection of software engineering,
+            ecommerce, and practical problem-solving. I enjoy turning ideas into
+            clean, usable products that help businesses look professional,
+            operate better, and reach more customers.
+          </p>
+
+          <p>
+            I&apos;m also studying{" "}
+            <span className="text-[#ccd6f6]">cybersecurity</span>, with growing
+            interests in secure systems, cloud security, networking, and
             incident response.
           </p>
 
           <p>
-            Currently, I&apos;m building ecommerce platforms, personal brands,
-            admin dashboards, and digital systems while continuously improving
-            my engineering and security skills.
+            Currently, I&apos;m building and improving real-world projects like{" "}
+            <span className="text-[#ccd6f6]">Shoe-In Kenya</span> and{" "}
+            <span className="text-[#ccd6f6]">Mr Glitch Computers</span> while
+            sharpening my engineering and security skills.
           </p>
         </div>
 

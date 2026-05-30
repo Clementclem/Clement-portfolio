@@ -30,11 +30,16 @@ export default function HomePage() {
             <Contact />
 
             <footer className="py-12 sm:py-16">
-              <p className="max-w-md text-[13px] leading-6 text-[#64748b]">
-                Built by Clement Wanjihia with Next.js, TypeScript, and Tailwind
-                CSS.
-              </p>
-            </footer>
+  <div className="border-t border-[#233554] pt-8">
+    <p className="text-[13px] leading-6 text-[#64748b]">
+      Built and designed by Clement Wanjihia.
+    </p>
+
+    <p className="mt-2 text-[13px] leading-6 text-[#64748b]">
+      Software Engineer • Cybersecurity Student • Problem Solver
+    </p>
+  </div>
+</footer>
           </div>
         </div>
       </main>

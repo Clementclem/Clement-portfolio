@@ -6,8 +6,14 @@ const featuredProject = {
   title: "Shoe-In Kenya",
   subtitle: "Production Ecommerce Platform",
   description:
-    "A live ecommerce website for a men’s footwear brand. I designed and built the shopping experience, product presentation, SEO structure, mobile responsiveness, and business-focused content to support real customer purchases.",
+    "A live ecommerce website for a men’s footwear brand in Kenya. I designed and built the shopping experience, product presentation, SEO structure, mobile responsiveness, and business-focused content to support real customer purchases.",
   image: "/projects/shoe-in.jpg",
+  problem:
+    "Shoe-In needed a stronger digital home beyond social media, where customers could browse products clearly and trust the brand.",
+  solution:
+    "I built a responsive ecommerce experience with clear product presentation, mobile-first layouts, SEO-friendly content, and a professional brand feel.",
+  impact:
+    "The site now gives the business a credible online presence and a foundation for paid ads, search traffic, and scalable digital sales.",
   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Vercel"],
   liveUrl: "https://shoeinkenya.co.ke",
   githubUrl: "#",
@@ -17,8 +23,10 @@ const otherProjects = [
   {
     title: "Mr Glitch Computers",
     description:
-      "A laptop and monitor ecommerce platform with product categories, admin dashboard structure, Supabase backend, and responsive product experiences.",
+      "An electronics ecommerce platform for laptops, monitors, and accessories with product categories, admin dashboard structure, and Supabase-powered backend workflows.",
     image: "/projects/mr-glitch.jpg",
+    achievement:
+      "Built a scalable Next.js and Supabase architecture for product management, responsive browsing, and future admin operations.",
     technologies: ["Next.js", "Supabase", "Vercel", "Tailwind CSS"],
     liveUrl: "#",
     githubUrl: "#",
@@ -26,8 +34,10 @@ const otherProjects = [
   {
     title: "Joseph Njogu Portfolio",
     description:
-      "A personal brand website for a business architect, team building expert, and pastor with resources, media sections, and a content-ready structure.",
+      "A personal brand website for a business architect, team-building expert, and pastor with resources, media sections, and a content-ready structure.",
     image: "/projects/joseph-njogu.jpg",
+    achievement:
+      "Created a clean brand platform that communicates multiple professional identities while keeping the user experience simple and focused.",
     technologies: ["React", "Supabase", "UI Design", "Content Systems"],
     liveUrl: "#",
     githubUrl: "#",
@@ -51,7 +61,7 @@ export default function Projects() {
         </h3>
       </div>
 
-      <article className="group rounded-md transition-all duration-200 hover:bg-[#112240]/60 hover:shadow-[0_18px_40px_rgba(2,12,27,0.35)] sm:p-5">
+      <article className="group rounded-xl border border-transparent p-0 transition-all duration-300 hover:border-[#233554] hover:bg-[#112240]/40 sm:p-5">
         <a
           href={featuredProject.liveUrl}
           target="_blank"
@@ -76,7 +86,7 @@ export default function Projects() {
                 {featuredProject.subtitle}
               </p>
 
-              <h4 className="mt-2 text-[21px] font-medium leading-snug text-[#e6f1ff] transition group-hover:text-[#64ffda]">
+              <h4 className="mt-2 text-[22px] font-medium leading-snug text-[#e6f1ff] transition group-hover:text-[#64ffda]">
                 {featuredProject.title}
               </h4>
             </div>
@@ -106,6 +116,27 @@ export default function Projects() {
             {featuredProject.description}
           </p>
 
+          <div className="mt-6 grid gap-4">
+            {[
+              ["Problem", featuredProject.problem],
+              ["Solution", featuredProject.solution],
+              ["Impact", featuredProject.impact],
+            ].map(([label, text]) => (
+              <div
+                key={label}
+                className="rounded-lg border border-[#233554] bg-[#0a192f]/40 p-4"
+              >
+                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#64ffda]">
+                  {label}
+                </p>
+
+                <p className="mt-2 text-[14px] leading-6 text-[#8892b0]">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <div className="mt-5 flex flex-wrap gap-2">
             {featuredProject.technologies.map((technology) => (
               <span
@@ -128,7 +159,7 @@ export default function Projects() {
           {otherProjects.map((project) => (
             <article
               key={project.title}
-              className="group grid gap-5 rounded-md transition-all duration-200 hover:bg-[#112240]/60 hover:shadow-[0_18px_40px_rgba(2,12,27,0.35)] sm:grid-cols-[160px_1fr] sm:p-5"
+              className="group grid gap-5 rounded-xl border border-transparent transition-all duration-300 hover:border-[#233554] hover:bg-[#112240]/40 sm:grid-cols-[160px_1fr] sm:p-5"
             >
               <div className="relative overflow-hidden rounded-md border border-[#233554] bg-[#112240]">
                 <Image
@@ -168,6 +199,16 @@ export default function Projects() {
                 <p className="mt-3 text-[15px] leading-7 text-[#8892b0]">
                   {project.description}
                 </p>
+
+                <div className="mt-4 rounded-lg border border-[#233554] bg-[#0a192f]/40 p-4">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#64ffda]">
+                    Key Achievement
+                  </p>
+
+                  <p className="mt-2 text-[14px] leading-6 text-[#8892b0]">
+                    {project.achievement}
+                  </p>
+                </div>
 
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.technologies.map((technology) => (

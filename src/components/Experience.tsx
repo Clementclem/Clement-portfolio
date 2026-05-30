@@ -1,44 +1,63 @@
 const experiences = [
   {
-    period: "2025 — PRESENT",
+    period: "2025 — Present",
     role: "Founder & Software Engineer",
     company: "Shoe-In Kenya",
     description:
-      "Built and launched a production ecommerce platform for a men’s footwear brand, combining software engineering, product strategy, SEO, and real business operations.",
-    highlights: [
-      "Designed and developed the customer-facing shopping experience.",
-      "Structured product pages for better discovery, trust, and conversion.",
-      "Added SEO-focused product content for local Kenyan search visibility.",
-      "Improved mobile responsiveness for customers browsing on phones.",
+      "Leading the digital growth of Shoe-In Kenya by building and improving the ecommerce platform, customer experience, product presentation, and online sales infrastructure.",
+    achievements: [
+      "Built and launched a production ecommerce platform.",
+      "Improved mobile shopping experience and responsiveness.",
+      "Implemented SEO-focused product content and structure.",
+      "Created scalable foundations for digital marketing and growth.",
     ],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Vercel"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SEO",
+      "Vercel",
+    ],
   },
   {
-    period: "2025 — PRESENT",
+    period: "2025 — Present",
     role: "Software Engineer",
     company: "Independent Projects",
     description:
-      "Building production-ready websites, ecommerce platforms, admin dashboards, and content systems for real-world business and personal brand use cases.",
-    highlights: [
-      "Developed responsive interfaces with clean component architecture.",
-      "Built admin-ready workflows for products, content, and dashboards.",
-      "Integrated Supabase-backed data flows for dynamic applications.",
-      "Deployed modern web applications through Vercel.",
+      "Designing and developing modern websites, ecommerce platforms, and digital products for businesses and personal brands.",
+    achievements: [
+      "Built responsive web applications with React and Next.js.",
+      "Developed reusable component systems and scalable layouts.",
+      "Integrated modern backend services using Supabase.",
+      "Delivered production-ready projects with a focus on usability.",
     ],
-    technologies: ["React", "Next.js", "Supabase", "Vercel", "UI Systems"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
   },
   {
-    period: "2026 — PRESENT",
+    period: "2025 — Present",
     role: "Cybersecurity Student",
-    company: "Personal Learning Path",
+    company: "Continuous Learning",
     description:
-      "Studying practical cybersecurity foundations alongside software engineering, with a focus on secure systems and cloud-aware development.",
-    highlights: [
-      "Learning networking, cloud security, and incident response fundamentals.",
-      "Applying security thinking to web applications and backend systems.",
-      "Building stronger awareness around authentication, access control, and deployment safety.",
+      "Actively studying cybersecurity with a focus on networking, cloud security, secure systems, and practical security principles.",
+    achievements: [
+      "Building a foundation in networking and system security.",
+      "Learning cloud security concepts and best practices.",
+      "Exploring incident response and security operations.",
+      "Applying security-first thinking to software projects.",
     ],
-    technologies: ["Security", "Networking", "Cloud", "Systems", "Incident Response"],
+    technologies: [
+      "Networking",
+      "Cloud Security",
+      "Linux",
+      "System Security",
+      "Incident Response",
+    ],
   },
 ];
 
@@ -49,44 +68,49 @@ export default function Experience() {
         Experience
       </h2>
 
-      <div className="space-y-4">
+      <div className="space-y-8">
         {experiences.map((experience) => (
           <article
             key={`${experience.role}-${experience.company}`}
-            className="group relative grid gap-4 rounded-md transition-all duration-200 hover:bg-[#112240]/60 hover:shadow-[0_18px_40px_rgba(2,12,27,0.35)] sm:grid-cols-[140px_1fr] sm:p-5"
+            className="group rounded-xl border border-transparent p-5 transition-all duration-300 hover:border-[#233554] hover:bg-[#112240]/40"
           >
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#64748b]">
+            <p className="font-mono text-[12px] uppercase tracking-[0.16em] text-[#64ffda]">
               {experience.period}
             </p>
 
-            <div>
-              <h3 className="text-[16px] font-medium leading-snug text-[#e6f1ff] transition group-hover:text-[#64ffda]">
-                {experience.role} · {experience.company}
-              </h3>
+            <h3 className="mt-3 text-[20px] font-medium text-[#e6f1ff] transition group-hover:text-[#64ffda]">
+              {experience.role}
+            </h3>
 
-              <p className="mt-3 text-[15px] leading-7 text-[#8892b0]">
-                {experience.description}
-              </p>
+            <p className="mt-1 text-[15px] text-[#ccd6f6]">
+              {experience.company}
+            </p>
 
-              <ul className="mt-4 space-y-2 text-[14px] leading-6 text-[#8892b0]">
-                {experience.highlights.map((highlight) => (
-                  <li key={highlight} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#64ffda]" />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
+            <p className="mt-4 text-[15px] leading-7 text-[#8892b0]">
+              {experience.description}
+            </p>
 
-              <div className="mt-5 flex flex-wrap gap-2">
-                {experience.technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="rounded-full bg-[#64ffda]/10 px-3 py-1 text-[12px] font-medium leading-5 text-[#64ffda]"
-                  >
-                    {technology}
-                  </span>
-                ))}
-              </div>
+            <ul className="mt-5 space-y-3">
+              {experience.achievements.map((achievement) => (
+                <li
+                  key={achievement}
+                  className="flex items-start gap-3 text-[14px] leading-6 text-[#8892b0]"
+                >
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#64ffda]" />
+                  <span>{achievement}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {experience.technologies.map((technology) => (
+                <span
+                  key={technology}
+                  className="rounded-full bg-[#64ffda]/10 px-3 py-1 text-[12px] font-medium text-[#64ffda]"
+                >
+                  {technology}
+                </span>
+              ))}
             </div>
           </article>
         ))}

@@ -2,22 +2,22 @@ const services = [
   {
     title: "Business Websites",
     description:
-      "Modern, responsive websites designed to help businesses build trust, attract customers, and grow online.",
+      "Modern, responsive websites for businesses that need a professional online presence, clear messaging, and a better way to convert visitors into customers.",
   },
   {
     title: "Ecommerce Development",
     description:
-      "Custom online stores built with modern technologies, optimized for conversions, performance, and mobile shopping.",
+      "Online stores built for product discovery, mobile shopping, SEO, and smooth customer journeys from browsing to checkout.",
   },
   {
     title: "Personal Brand Websites",
     description:
-      "Professional websites for entrepreneurs, consultants, coaches, speakers, and personal brands.",
+      "Clean, polished websites for founders, consultants, speakers, coaches, pastors, and public-facing professionals.",
   },
   {
     title: "Web Application Development",
     description:
-      "Custom React and Next.js applications with scalable architecture and modern user experiences.",
+      "Custom React and Next.js applications with scalable structure, clean interfaces, and practical business functionality.",
   },
 ];
 
@@ -28,13 +28,23 @@ export default function Services() {
         Services
       </h2>
 
-      <div className="space-y-5">
+      <div className="mb-8">
+        <p className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#64ffda]">
+          What I Can Help With
+        </p>
+
+        <h3 className="mt-3 text-[28px] font-normal tracking-[-0.03em] text-[#e6f1ff]">
+          Services
+        </h3>
+      </div>
+
+      <div className="space-y-4">
         {services.map((service) => (
           <article
             key={service.title}
-            className="rounded-xl border border-[#233554] bg-[#112240]/40 p-6 transition hover:border-[#64ffda]/30"
+            className="group rounded-xl border border-[#233554] bg-[#112240]/40 p-5 transition-all duration-300 hover:border-[#64ffda]/30 hover:bg-[#112240]/60 sm:p-6"
           >
-            <h3 className="text-[18px] font-medium text-[#e6f1ff]">
+            <h3 className="text-[18px] font-medium text-[#e6f1ff] transition group-hover:text-[#64ffda]">
               {service.title}
             </h3>
 
